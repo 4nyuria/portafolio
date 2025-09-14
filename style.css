@@ -9,7 +9,15 @@
     outline: none;
     font-family: 'Poppins', sans-serif;
 }
-
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Fondo detrás del contenido */
+  width: 100%;
+  height: 100%;
+display: block;
+}
 html{
     font-size: 62.5%;
 }
