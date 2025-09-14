@@ -13,10 +13,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1; /* Fondo detrás del contenido */
+  z-index: 0;
   width: 100%;
   height: 100%;
-display: block;
+  display: block;
+  pointer-events: none; /* para que no bloquee clics */
 }
 html{
     font-size: 62.5%;
@@ -29,7 +30,9 @@ body{
     background-color: #080C0A;
     color: #F7EADF;
 }
-
+section {
+  background-color: rgba(0,0,0,0.5); /* semi-transparente para ver estrellas */
+}
 header{
     margin-top: 20px;
     position: fixed;
