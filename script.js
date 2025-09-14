@@ -8,8 +8,6 @@ if (menuIcon) {
         navbar.classList.toggle('active');
     }
 }
-
-// -----------------------
 // Canvas y estrellas
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
@@ -22,15 +20,15 @@ resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
 const stars = [];
-const numStars = 100;
+const numStars = 1000;
 
 for (let i = 0; i < numStars; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     radius: Math.random() * 1.5 + 0.5,
-    speed: Math.random() * 0.5 + 0.2,
-    color: 'white'
+    speed: Math.random() * 0.5 + 1,
+    color: '#b74b4b'
   });
 }
 
@@ -42,7 +40,7 @@ function animate() {
     if (star.y < 0) star.y = canvas.height;
 
     ctx.beginPath();
-    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 360);
     ctx.fillStyle = star.color;
     ctx.fill();
   });

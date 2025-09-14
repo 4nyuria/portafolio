@@ -13,7 +13,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   display: block;
@@ -160,7 +160,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: #080C0A;
+    background-color: transparent
 }
 
 .home .home-content h1{
@@ -374,33 +374,6 @@ span{
 }
 .project-card p{
     font-size: 1.6rem;
-}
-.contact{
-    background-color: #b74b4b;
-}
-.contact h2 {
-    margin-bottom: 3rem;
-    color: #dec1bb;
-}
-.contact form{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem 0;
-    text-align: center;
-}
-.contact form .input-box input,
-.contact form textarea {
-    width:100%;
-    padding: 2.5rem;
-    font-size:1.8rem;
-    color:#dec1bb;
-   background-color: #dec1bb;
-   border-radius: 3rem;
-   border: 2px solid;
-   margin: 0.5rem;
-   resize:none;
 }
 .footer{
     background-color: #e24a3b;
