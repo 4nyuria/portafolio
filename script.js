@@ -67,8 +67,8 @@ let letter = '';
   if (letter.length === currentText.length) {
     count++;
     index = 0;
-    setTimeout(type, 1500); // espera antes de borrar y escribir siguiente
+    setTimeout(type, 1000); // espera antes de borrar y escribir siguiente
   } else {
-    setTimeout(type, 150);
+    setTimeout(type, 130);
   }
 })();

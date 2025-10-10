@@ -336,7 +336,9 @@ span{
     background-color: #080C0A;
     color: #f9eee5;
 }
-
+.project .heading {
+    color: #f9eee5; /* blanco/crema */
+}
 .project-box {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
