@@ -254,12 +254,10 @@ span{
 .typing-text{
     font-size: 34px;
     font-weight: 600;
-    min-width: 280px;
     color:#e24a3b;
-    margin-bottom:auto;
+    margin-bottom:2rem;
 }
 #typed {
-  border-right: 3px solid #f9eee5; /* cursor */
   white-space: nowrap;
   overflow: hidden;
 }
