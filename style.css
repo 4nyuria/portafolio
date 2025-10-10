@@ -261,31 +261,13 @@ span{
   white-space: nowrap;
   overflow: hidden;
 }
-.typing-text span{
-    
-    color:inherit;
-    padding-right: 10px;
+#typed.blink {
+  animation: blink 0.6s infinite;
 }
 
-.typing-text span::before{
-    content: "Freelance Illustrator";
-    color: #b74b4b;
-    position: absolute;
-    left: 0;
-    top: 0;
-    animation: words 20s infinite;
-}
-
-.typing-text span::after{
-    content: "";
-    background-color: #f9eee5;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid #080C0A;
-    right: -8px;
-    animation: cursor 0.6s infinite;
-    color: #e24a3b;
+@keyframes blink {
+  0%, 50%, 100% { border-color: #e24a3b; }
+  25%, 75% { border-color: transparent; }
 }
 .heading{
     text-align: center;
