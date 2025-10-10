@@ -258,28 +258,36 @@ span{
     color:#e24a3b;
     margin-bottom:auto;
 }
-
+#typed {
+  border-right: 3px solid #f9eee5; /* cursor */
+  white-space: nowrap;
+  overflow: hidden;
+}
 .typing-text span{
-    position: relative;
-    color:#b85746;
+    
+    color:inherit;
     padding-right: 10px;
 }
 
 .typing-text span::before{
     content: "Freelance Illustrator";
     color: #b74b4b;
+    position: absolute;
+    left: 0;
+    top: 0;
     animation: words 20s infinite;
 }
 
 .typing-text span::after{
     content: "";
-    background-color: #080C0A;
+    background-color: #f9eee5;
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
     border-left: 3px solid #080C0A;
     right: -8px;
     animation: cursor 0.6s infinite;
+    color: #e24a3b;
 }
 .heading{
     text-align: center;
@@ -375,10 +383,15 @@ span{
     transition: 0.5s ease-in-out;
     
 }
+.project-card h2{
+    font-size: 1.6rem;
+    color: #f9eee5;
+}
 .project-card:hover{
     box-shadow: 0 0 25px #b77c4b,
                 0 0 50px #e24a3b;
     transform: scale(1.02);
+    color:#f9eee5;
 }
 .project-card img{
     max-width: 300px;
@@ -387,6 +400,7 @@ span{
 }
 .project-card h3{
     font-size: 3rem;
+    color: #f9eee5;
 }
 .project-card p{
     font-size: 1.6rem;
