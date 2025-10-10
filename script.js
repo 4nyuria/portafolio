@@ -27,7 +27,7 @@ for (let i = 0; i < numStars; i++) {
     y: Math.random() * canvas.height,
     radius: Math.random() * 1.5 + 0.5,
     speed: Math.random() * 0.5 + 1,
-    color: '#b74b4b'
+    color: '#d4c7c7ff'
   });
 }
 
