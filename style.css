@@ -342,6 +342,7 @@ span{
 }
 .project {
     background-color: #080C0A;
+    color: #f9eee5;
 }
 .project-box {
      display: grid;
@@ -366,6 +367,7 @@ span{
     max-width: 350px;
     box-shadow: 0 0 15px #b74b4b;
     transition: 0.5s ease-in-out;
+    color: #f9eee5;
 }
 .project-card:hover{
     box-shadow: 0 0 25px #b77c4b,
