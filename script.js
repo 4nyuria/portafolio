@@ -16,9 +16,8 @@ function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 }
-resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
-
+resizeCanvas();
 const stars = [];
 const numStars = 1000;
 
@@ -49,3 +48,7 @@ function animate() {
 }
 
 animate();
+function resizeCanvas() {
+    canvas.width = Math.max(document.documentElement.scrollWidth, window.innerWidth);
+    canvas.height = Math.max(document.documentElement.scrollHeight, window.innerHeight);
+}
