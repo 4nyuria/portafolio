@@ -14,8 +14,8 @@
   top: 0;
   left: 0;
   z-index: -1;
-  width: 100%;
-  height: 100%;
+  width: 100%vw;
+  height: 100%vh;
   display: block;
   pointer-events: none; /* para que no bloquee clics */
 }
@@ -24,9 +24,10 @@ html{
 }
 
 body{
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
     background-color: #080C0A;
     color: #F7EADF;
 }
