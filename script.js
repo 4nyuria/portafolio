@@ -52,3 +52,23 @@ function resizeCanvas() {
     canvas.width = Math.max(document.documentElement.scrollWidth, window.innerWidth);
     canvas.height = Math.max(document.documentElement.scrollHeight, window.innerHeight);
 }
+const texts = ["Freelance Illustrator", "Visual Storyteller", "Storyboard Artist", "2D Model Artist"];
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+
+(function type() {
+  if (count === texts.length) count = 0;
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+  
+  document.getElementById('typed').textContent = letter;
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+    setTimeout(type, 1500); // espera antes de borrar y escribir siguiente
+  } else {
+    setTimeout(type, 150);
+  }
+})();
